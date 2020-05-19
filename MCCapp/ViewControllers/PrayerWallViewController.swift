@@ -53,9 +53,7 @@ class PrayerWallViewController: UIViewController,UITableViewDelegate,UITableView
                    
                    self.prayerTimestamps.append(prayTimeDate)
                    
-                   //self.prayerRequest.append(pray
-                 //  [""] as! String)
-                   
+              
                    
                    self.userName.append(prayPost["username"] as! String)
                    

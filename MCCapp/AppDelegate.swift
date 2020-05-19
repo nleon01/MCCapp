@@ -9,15 +9,23 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import CBFlashyTabBarController
+import IQKeyboardManager
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+  
+    var window: UIWindow?
+       let userDefault = UserDefaults()
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        IQKeyboardManager.shared().isEnabled = true
         return true
     }
 
@@ -36,7 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     }
     
     
+    
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
         return GIDSignIn.sharedInstance().handle(url)
     }
     

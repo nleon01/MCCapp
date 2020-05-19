@@ -27,6 +27,27 @@
 		A634D1CB246A6D2600FAC052 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CA246A6D2600FAC052 /* FeedViewController.swift */; };
 		A634D1CC246A6D2600FAC052 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CA246A6D2600FAC052 /* FeedViewController.swift */; };
 		A634D1CD246A6D2600FAC052 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CA246A6D2600FAC052 /* FeedViewController.swift */; };
+		A634D1CF246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */; };
+		A634D1D0246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */; };
+		A634D1D1246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */; };
+		A634D1D3246E339800FAC052 /* Connected_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1D2246E339800FAC052 /* Connected_ViewController.swift */; };
+		A634D1D4246E339800FAC052 /* Connected_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1D2246E339800FAC052 /* Connected_ViewController.swift */; };
+		A634D1D5246E339800FAC052 /* Connected_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A634D1D2246E339800FAC052 /* Connected_ViewController.swift */; };
+		A6706C542471C3C5005EC36A /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */; };
+		A6706C552471C3C5005EC36A /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */; };
+		A6706C562471C3C5005EC36A /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */; };
+		A6706C582471C3F1005EC36A /* EventPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C572471C3F1005EC36A /* EventPickerViewController.swift */; };
+		A6706C592471C3F1005EC36A /* EventPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C572471C3F1005EC36A /* EventPickerViewController.swift */; };
+		A6706C5A2471C3F1005EC36A /* EventPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C572471C3F1005EC36A /* EventPickerViewController.swift */; };
+		A6706C5C2471C417005EC36A /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C5B2471C416005EC36A /* EventsViewController.swift */; };
+		A6706C5D2471C417005EC36A /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C5B2471C416005EC36A /* EventsViewController.swift */; };
+		A6706C5E2471C417005EC36A /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C5B2471C416005EC36A /* EventsViewController.swift */; };
+		A6706C6824726FC5005EC36A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6706C6724726FC5005EC36A /* GoogleService-Info.plist */; };
+		A6706C6924726FC5005EC36A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6706C6724726FC5005EC36A /* GoogleService-Info.plist */; };
+		A6706C6A24726FC5005EC36A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6706C6724726FC5005EC36A /* GoogleService-Info.plist */; };
+		A6706C6C247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C6B247461F1005EC36A /* WelcomeScreenViewController.swift */; };
+		A6706C6D247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C6B247461F1005EC36A /* WelcomeScreenViewController.swift */; };
+		A6706C6E247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6706C6B247461F1005EC36A /* WelcomeScreenViewController.swift */; };
 		A6D79FF32467D4B800382F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D79FF22467D4B800382F29 /* AppDelegate.swift */; };
 		A6D79FF52467D4B800382F29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D79FF42467D4B800382F29 /* SceneDelegate.swift */; };
 		A6D79FF72467D4B800382F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D79FF62467D4B800382F29 /* ViewController.swift */; };
@@ -35,9 +56,6 @@
 		A6D79FFF2467D4BA00382F29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D79FFD2467D4BA00382F29 /* LaunchScreen.storyboard */; };
 		A6D7A00A2467D4BA00382F29 /* MCCappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A0092467D4BA00382F29 /* MCCappTests.swift */; };
 		A6D7A0152467D4BA00382F29 /* MCCappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A0142467D4BA00382F29 /* MCCappUITests.swift */; };
-		A6D7A0232467D50600382F29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7A0222467D50600382F29 /* GoogleService-Info.plist */; };
-		A6D7A0242467D50600382F29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7A0222467D50600382F29 /* GoogleService-Info.plist */; };
-		A6D7A0252467D50600382F29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7A0222467D50600382F29 /* GoogleService-Info.plist */; };
 		A6D7A0272467D72700382F29 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A0262467D72700382F29 /* SignInViewController.swift */; };
 		A6D7A0282467D72700382F29 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A0262467D72700382F29 /* SignInViewController.swift */; };
 		A6D7A0292467D72700382F29 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D7A0262467D72700382F29 /* SignInViewController.swift */; };
@@ -81,6 +99,13 @@
 		A634D1C2246A6B7900FAC052 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A634D1C6246A6CC000FAC052 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		A634D1CA246A6D2600FAC052 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stay_Connected_CollectionViewCell.swift; sourceTree = "<group>"; };
+		A634D1D2246E339800FAC052 /* Connected_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connected_ViewController.swift; sourceTree = "<group>"; };
+		A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		A6706C572471C3F1005EC36A /* EventPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPickerViewController.swift; sourceTree = "<group>"; };
+		A6706C5B2471C416005EC36A /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		A6706C6724726FC5005EC36A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../plist/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6706C6B247461F1005EC36A /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		A6D79FEF2467D4B800382F29 /* MCCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D79FF22467D4B800382F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D79FF42467D4B800382F29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +120,6 @@
 		A6D7A0102467D4BA00382F29 /* MCCappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCCappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D7A0142467D4BA00382F29 /* MCCappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCappUITests.swift; sourceTree = "<group>"; };
 		A6D7A0162467D4BA00382F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6D7A0222467D50600382F29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6D7A0262467D72700382F29 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A6D7A02A2467E2D100382F29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A6D7A02E246885DE00382F29 /* PrayerWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWallViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +169,12 @@
 			isa = PBXGroup;
 			children = (
 				A6D7A02A2467E2D100382F29 /* HomeViewController.swift */,
+				A6706C6B247461F1005EC36A /* WelcomeScreenViewController.swift */,
 				A6D7A02E246885DE00382F29 /* PrayerWallViewController.swift */,
+				A6706C572471C3F1005EC36A /* EventPickerViewController.swift */,
+				A634D1D2246E339800FAC052 /* Connected_ViewController.swift */,
+				A6706C5B2471C416005EC36A /* EventsViewController.swift */,
+				A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */,
 				A634D1CA246A6D2600FAC052 /* FeedViewController.swift */,
 				A634D1C6246A6CC000FAC052 /* ComposeViewController.swift */,
 				A634D1BE2468A9BA00FAC052 /* PrayerWallPostViewController.swift */,
@@ -160,6 +189,7 @@
 			children = (
 				A634D1BA2468A0B000FAC052 /* PrayerWallTableViewCell.swift */,
 				A634D1C2246A6B7900FAC052 /* CustomTableViewCell.swift */,
+				A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */,
 			);
 			path = TableViews;
 			sourceTree = "<group>";
@@ -206,7 +236,7 @@
 				A6D79FFB2467D4BA00382F29 /* Assets.xcassets */,
 				A6D79FFD2467D4BA00382F29 /* LaunchScreen.storyboard */,
 				A6D7A0002467D4BA00382F29 /* Info.plist */,
-				A6D7A0222467D50600382F29 /* GoogleService-Info.plist */,
+				A6706C6724726FC5005EC36A /* GoogleService-Info.plist */,
 			);
 			path = MCCapp;
 			sourceTree = "<group>";
@@ -354,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D79FFF2467D4BA00382F29 /* LaunchScreen.storyboard in Resources */,
-				A6D7A0232467D50600382F29 /* GoogleService-Info.plist in Resources */,
+				A6706C6824726FC5005EC36A /* GoogleService-Info.plist in Resources */,
 				A6D79FFC2467D4BA00382F29 /* Assets.xcassets in Resources */,
 				A6D79FFA2467D4B800382F29 /* Main.storyboard in Resources */,
 			);
@@ -364,7 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D7A0242467D50600382F29 /* GoogleService-Info.plist in Resources */,
+				A6706C6924726FC5005EC36A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D7A0252467D50600382F29 /* GoogleService-Info.plist in Resources */,
+				A6706C6A24726FC5005EC36A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,12 +551,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A634D1BF2468A9BA00FAC052 /* PrayerWallPostViewController.swift in Sources */,
+				A6706C542471C3C5005EC36A /* PickerTableViewCell.swift in Sources */,
 				A6D7A02B2467E2D100382F29 /* HomeViewController.swift in Sources */,
 				A6D7A0272467D72700382F29 /* SignInViewController.swift in Sources */,
 				A634D1B724689F0500FAC052 /* Date Model.swift in Sources */,
+				A6706C6C247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */,
+				A634D1CF246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */,
 				A6D79FF72467D4B800382F29 /* ViewController.swift in Sources */,
 				A6D79FF32467D4B800382F29 /* AppDelegate.swift in Sources */,
 				A634D1C7246A6CC000FAC052 /* ComposeViewController.swift in Sources */,
+				A6706C582471C3F1005EC36A /* EventPickerViewController.swift in Sources */,
+				A6706C5C2471C417005EC36A /* EventsViewController.swift in Sources */,
+				A634D1D3246E339800FAC052 /* Connected_ViewController.swift in Sources */,
 				A634D1C3246A6B7900FAC052 /* CustomTableViewCell.swift in Sources */,
 				A6D79FF52467D4B800382F29 /* SceneDelegate.swift in Sources */,
 				A634D1BB2468A0B000FAC052 /* PrayerWallTableViewCell.swift in Sources */,
@@ -540,15 +576,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A634D1C8246A6CC000FAC052 /* ComposeViewController.swift in Sources */,
+				A634D1D0246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */,
 				A6D7A0282467D72700382F29 /* SignInViewController.swift in Sources */,
 				A634D1CC246A6D2600FAC052 /* FeedViewController.swift in Sources */,
 				A6D7A00A2467D4BA00382F29 /* MCCappTests.swift in Sources */,
+				A6706C6D247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */,
 				A634D1C4246A6B7900FAC052 /* CustomTableViewCell.swift in Sources */,
 				A634D1C02468A9BA00FAC052 /* PrayerWallPostViewController.swift in Sources */,
 				A634D1BC2468A0B000FAC052 /* PrayerWallTableViewCell.swift in Sources */,
 				A634D1B824689F0500FAC052 /* Date Model.swift in Sources */,
+				A6706C592471C3F1005EC36A /* EventPickerViewController.swift in Sources */,
 				A6D7A02C2467E2D100382F29 /* HomeViewController.swift in Sources */,
+				A6706C552471C3C5005EC36A /* PickerTableViewCell.swift in Sources */,
+				A634D1D4246E339800FAC052 /* Connected_ViewController.swift in Sources */,
 				A6D7A030246885DE00382F29 /* PrayerWallViewController.swift in Sources */,
+				A6706C5D2471C417005EC36A /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,15 +599,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A634D1C9246A6CC000FAC052 /* ComposeViewController.swift in Sources */,
+				A634D1D1246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift in Sources */,
 				A6D7A0292467D72700382F29 /* SignInViewController.swift in Sources */,
 				A634D1CD246A6D2600FAC052 /* FeedViewController.swift in Sources */,
 				A6D7A0152467D4BA00382F29 /* MCCappUITests.swift in Sources */,
+				A6706C6E247461F1005EC36A /* WelcomeScreenViewController.swift in Sources */,
 				A634D1C5246A6B7900FAC052 /* CustomTableViewCell.swift in Sources */,
 				A634D1C12468A9BA00FAC052 /* PrayerWallPostViewController.swift in Sources */,
 				A634D1BD2468A0B000FAC052 /* PrayerWallTableViewCell.swift in Sources */,
 				A634D1B924689F0500FAC052 /* Date Model.swift in Sources */,
+				A6706C5A2471C3F1005EC36A /* EventPickerViewController.swift in Sources */,
 				A6D7A02D2467E2D100382F29 /* HomeViewController.swift in Sources */,
+				A6706C562471C3C5005EC36A /* PickerTableViewCell.swift in Sources */,
+				A634D1D5246E339800FAC052 /* Connected_ViewController.swift in Sources */,
 				A6D7A031246885DE00382F29 /* PrayerWallViewController.swift in Sources */,
+				A6706C5E2471C417005EC36A /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,7 +778,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MissionChurch.MCCapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MissionChurch.MCCapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -749,7 +797,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MissionChurch.MCCapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MissionChurch.MCCapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

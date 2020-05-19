@@ -23,39 +23,19 @@ class PrayerWallPostViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
 
         prayerRef = Database.database().reference()
-        
-        prayerPostText.text = "Type your prayer request here"
-        prayerPostText.textColor = UIColor.lightGray
-        prayerPostText.font = UIFont(name: "verdana", size: 13.0)
-        prayerPostText.returnKeyType = .done
-        prayerPostText.delegate = self
+     
      
 
     }
-    //MARK:- UITextViewDelegates
+ 
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.text == "Type your prayer request here" {
-            textView.text = ""
-            textView.textColor = UIColor.black
-            textView.font = UIFont(name: "verdana", size: 16.0)
-        }
-    }
-    
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
-            textView.resignFirstResponder()
-        }
-        return true
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView.text == "" {
-            textView.text = "Type your prayer request here"
-            textView.textColor = UIColor.lightGray
-            textView.font = UIFont(name: "verdana", size: 13.0)
-        }
-    }
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//        if text == "\n" {
+//            textView.resignFirstResponder()
+//        }
+//        return true
+//    }
+
   
     
 //////////////////////////////////
@@ -63,7 +43,6 @@ class PrayerWallPostViewController: UIViewController, UITextViewDelegate {
         
        
         var userInfo = Auth.auth().currentUser?.displayName
-        
         
         
         if privacyFilter.isOn {

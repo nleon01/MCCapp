@@ -39,7 +39,20 @@ class HomeViewController: UIViewController {
      }
      
 
-     
+    @IBAction func Logout_IsTapped(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+        }catch let logoutError{
+            print("logoutError")
+        }
+        
+       let logoutStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let SigninVC = storyboard?.instantiateViewController(withIdentifier: "SignInViewController") else { return }
+        SigninVC.modalPresentationStyle = .fullScreen
+        self.present(SigninVC, animated: true, completion: nil)
+    }
+    
      @IBAction func instagramDidGetTouch(_ sender: Any) {
     UIApplication.shared.openURL(URL(string: "https://www.instagram.com/fellowshipmissionchurch/?hl=en")!)
          

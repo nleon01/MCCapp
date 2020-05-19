@@ -11,49 +11,49 @@ import GoogleSignIn
 import Firebase
 
 class SignInViewController: UIViewController, GIDSignInDelegate {
+   
+    
+   
 
+    @IBAction func signIn(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-GIDSignIn.sharedInstance()?.delegate = self
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func Gsign_In(_ sender: Any) {
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance()?.signIn()
-        
+        GIDSignIn.sharedInstance().delegate = self
     }
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-         if error != nil{
-             return
-         }
-         guard let authentication = user.authentication else {return}
-         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
-        
-        
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-            if (error != nil){
-                return
-            }else{
-           
-            
-            }
-        }
-        
-        
-        
-        }
-    
-    
-    
-    
-    
-     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-     if let error = error {
-         print("\(error.localizedDescription)")
-     }
-     }
-    
 
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+          if let error = error {
+          print(error.localizedDescription)
+          return
+          }
+          guard let auth = user.authentication else { return }
+          let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+          Auth.auth().signIn(with: credentials) { (authResult, error) in
+          if let error = error {
+          print(error.localizedDescription)
+          } else {
+            print("Login Successful")
+            print(authResult?.user.displayName)
+            self.performSegue(withIdentifier: "welcome", sender: nil)
+            
+          }
+            
+      }
+}
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "welcome", sender: nil)
+        } else {
+          // No user is signed in.
+          // ...
+        }
+    }
 }
