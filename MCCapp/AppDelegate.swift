@@ -11,9 +11,10 @@ import Firebase
 import GoogleSignIn
 import CBFlashyTabBarController
 import IQKeyboardManager
+import SwiftRaisedTab
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
     
     
   
@@ -23,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+       var navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor =  UIColor.white
+        navigationBarAppearace.barTintColor = UIColor.clear
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         IQKeyboardManager.shared().isEnabled = true

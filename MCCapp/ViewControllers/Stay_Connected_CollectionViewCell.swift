@@ -9,8 +9,10 @@
 import UIKit
 
 class Stay_Connected_CollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var Title: UILabel!
-    @IBOutlet weak var connection_Button: UIButton!
+    
+    
+    
+    
+    
     
 }

@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import Firebase
 
-class SignInViewController: UIViewController, GIDSignInDelegate {
+class SignInViewController: UIViewController, GIDSignInDelegate,UITabBarControllerDelegate {
    
     
    
@@ -48,7 +48,6 @@ class SignInViewController: UIViewController, GIDSignInDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "welcome", sender: nil)
         } else {

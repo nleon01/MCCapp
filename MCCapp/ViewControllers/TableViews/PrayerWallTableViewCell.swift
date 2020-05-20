@@ -8,6 +8,8 @@
     import UIKit
     import GoogleSignIn
 
+
+
     class PrayerWallTableViewCell: UITableViewCell {
         
         @IBOutlet weak var encouragement_Title: UILabel!
@@ -15,7 +17,9 @@
         @IBOutlet weak var userNameLabel: UILabel!
         @IBOutlet weak var prayerRequestLabel: UILabel!
         @IBOutlet weak var wallTimeStamp: UILabel!
+        
  
+        
         
         override func awakeFromNib() {
             super.awakeFromNib()

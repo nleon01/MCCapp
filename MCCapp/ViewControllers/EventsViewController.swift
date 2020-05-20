@@ -107,8 +107,9 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
         cell.datePosted.text = eventTimestampDate.timeAgoDisplay()
         
         
-        
         cell.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
+        
         return cell
     
     

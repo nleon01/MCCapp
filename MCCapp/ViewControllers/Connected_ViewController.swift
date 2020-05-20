@@ -8,47 +8,140 @@
 
 import UIKit
 
-class Connected_ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class Connected_ViewController: UIViewController {
    
-
-    @IBOutlet weak var conneted_collection: UICollectionView!
+    @IBOutlet weak var MB1: UIVisualEffectView!
+    
+    @IBOutlet weak var ML1: UILabel!
+    
+    @IBOutlet weak var MB2: UIVisualEffectView!
+       
+    @IBOutlet weak var ML2: UILabel!
+    
+    @IBOutlet weak var MB3: UIVisualEffectView!
+       
+    @IBOutlet weak var ML3: UILabel!
+    
+    @IBOutlet weak var MB4: UIVisualEffectView!
+       
+    @IBOutlet weak var ML4: UILabel!
+    
+    @IBOutlet weak var MB5: UIVisualEffectView!
+       
+    @IBOutlet weak var ML5: UILabel!
+    
+    @IBOutlet weak var MB6: UIVisualEffectView!
+       
+    @IBOutlet weak var ML6: UILabel!
+    
+    @IBOutlet weak var MB7: UIVisualEffectView!
+       
+    @IBOutlet weak var ML7: UILabel!
+    
+    @IBOutlet weak var MB8: UIVisualEffectView!
+       
+    @IBOutlet weak var ML8: UILabel!
+    
+    @IBOutlet weak var MB9: UIVisualEffectView!
+       
+    @IBOutlet weak var ML9: UILabel!
+    
+    @IBOutlet weak var MCC1: UIButton!
+    @IBOutlet weak var MCC2: UIButton!
+    @IBOutlet weak var MCC3: UIButton!
+    @IBOutlet weak var MCC4: UIButton!
+    @IBOutlet weak var MCC5: UIButton!
+    @IBOutlet weak var MCC6: UIButton!
+    @IBOutlet weak var MCC7: UIButton!
+    @IBOutlet weak var MCC8: UIButton!
+    @IBOutlet weak var MCC9: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        radi()
+        
+    }
 
-        var layout = self.conneted_collection.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-        layout.minimumInteritemSpacing = 5
-        layout.itemSize = CGSize(width:(self.conneted_collection.frame.size.width - 20)/2, height: self.conneted_collection.frame.size.height/3)
+       
+    
+    @IBAction func MC1(_ sender: Any) {
+        
+UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
     }
     
-let connectedTitles = ["Adults Sunday School","Childrens Church Live","Prayer Line","Youth Sunday School","Christian Enrichment","Morning Prayer"]
     
-
-    
-   let churchConnectImages: [UIImage] = [
-        UIImage(named: "Adults Sunday School")!, UIImage(named: "Childrens Church Live")!, UIImage(named: "Prayer Line")!,UIImage(named: "Youth Sunday School")!,UIImage(named: "Christian Enrichment")!,UIImage(named: "Morning Prayer")!]
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return connectedTitles.count
+    @IBAction func MC2(_ sender: Any) {
        }
-       
-       func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "connectedcell", for: indexPath) as! Stay_Connected_CollectionViewCell
-        
-       cell.image.image = churchConnectImages[indexPath.item]
-        
-        cell.Title.text = connectedTitles[indexPath.item]
-        
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        
-        cell.layer.borderWidth = 0.5
-        
-        
-        return cell
+    
+    @IBAction func MC3(_ sender: Any) {
        }
-       
-
+    
+    @IBAction func MC4(_ sender: Any) {
+       }
+    
+    @IBAction func MC5(_ sender: Any) {
+       }
+    
+    @IBAction func MC6(_ sender: Any) {
+       }
+    
+    @IBAction func MC7(_ sender: Any) {
+       }
+    
+    @IBAction func MC8(_ sender: Any) {
+       }
+    
+    @IBAction func MC9(_ sender: Any) {
+       }
+    
+    override func viewDidAppear(_ animated: Bool) {
+    radi()
+    }
+    
+    
+    func radi() {
+     
+        MCC1.layer.cornerRadius = 7
+        MB1.layer.cornerRadius = 7
+        ML1.layer.cornerRadius = 7
+        
+        
+        MCC2.layer.cornerRadius = 7
+        MB2.layer.cornerRadius = 7
+        ML2.layer.cornerRadius = 7
+        
+        MCC3.layer.cornerRadius = 7
+        MB3.layer.cornerRadius = 7
+        ML3.layer.cornerRadius = 7
+        
+        MCC4.layer.cornerRadius = 7
+        MB4.layer.cornerRadius = 7
+        ML4.layer.cornerRadius = 7
+        
+        MCC5.layer.cornerRadius = 7
+        MB5.layer.cornerRadius = 7
+        ML5.layer.cornerRadius = 7
+        
+        MCC6.layer.cornerRadius = 7
+        MB6.layer.cornerRadius = 7
+        ML6.layer.cornerRadius = 7
+        
+        MCC7.layer.cornerRadius = 7
+        MB7.layer.cornerRadius = 7
+        ML7.layer.cornerRadius = 7
+        
+        MCC8.layer.cornerRadius = 7
+        MB8.layer.cornerRadius = 7
+        ML8.layer.cornerRadius = 7
+        
+        MCC9.layer.cornerRadius = 7
+        MB9.layer.cornerRadius = 7
+        ML9.layer.cornerRadius = 7
+        
+    }
+    
+    
 }

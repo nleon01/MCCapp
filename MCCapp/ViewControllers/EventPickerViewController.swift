@@ -77,17 +77,10 @@ class EventPickerViewController: UIViewController, UIImagePickerControllerDelega
             eventsLocation.dataDetectorTypes = (UIDataDetectorTypes.all)
             
             eventsTitleTextField.dataDetectorTypes = (UIDataDetectorTypes.all)
-            
-            
-            
+        
             
         }
-        
-        
-      
-        
-        
-        
+    
         
         
         
@@ -229,10 +222,6 @@ class EventPickerViewController: UIViewController, UIImagePickerControllerDelega
                     }
                 })
             }
-            
-          
-                
-           
             
             
             self.dismiss(animated: true, completion: nil)
