@@ -66,35 +66,56 @@ class Connected_ViewController: UIViewController {
     }
 
        
-    
+    // Childrens Church
     @IBAction func MC1(_ sender: Any) {
         
-UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
+UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/842029288")!)
     }
     
-    
+    //Adult Sunday School
     @IBAction func MC2(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/86748738836")!)
        }
     
+    
+    // Tuesday Bible Study
     @IBAction func MC3(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
        }
     
+    // Teen Sunday School
+   
     @IBAction func MC4(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/87281504685")!)
        }
     
+     //friday Night Prayer
+   
     @IBAction func MC5(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
        }
+    
+     // Morning Prayer
+   
     
     @IBAction func MC6(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/910302977")!)
        }
+    
+     // Junior Sunday School
+   
     
     @IBAction func MC7(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/81562699398")!)
        }
+     //Christian Enrighment
     
     @IBAction func MC8(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/723115841")!)
        }
-    
+     //Sunday Worship
     @IBAction func MC9(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
        }
     
     override func viewDidAppear(_ animated: Bool) {
