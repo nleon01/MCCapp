@@ -25,27 +25,11 @@ class ComposeViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 ref = Database.database().reference()
-        
-        textView.text = "Please typer here"
-        textView.textColor = UIColor.lightGray
-        textView.delegate = self
+    
         
 }
    
 
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.textColor == UIColor.lightGray {
-            textView.text = nil
-            textView.textColor = UIColor.black
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView.text.isEmpty {
-            textView.text = "Please typer here"
-            textView.textColor = UIColor.lightGray
-        }
-    }
     
     
     @IBAction func addPost(_ sender: Any) {

@@ -88,5 +88,21 @@ cell.titleTextLabel.text = titleLabel[indexPath.row]
     
         return cell
 }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if (Auth.auth().currentUser!.displayName != "Neil Leon")  {
+            self.announcementsComposer.tintColor = UIColor.clear
+            self.announcementsComposer.isEnabled = false
+           
+            
+        }
+        else{
+            
+            self.announcementsComposer.isEnabled = true
+        }
+        
+    }
+    
 }
 

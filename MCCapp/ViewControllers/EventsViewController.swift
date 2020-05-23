@@ -16,6 +16,8 @@ import KMPlaceholderTextView
 
 class EventsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
+    @IBOutlet weak var EventsIndicator: UIActivityIndicatorView!
+    
     var eventTimestamps:[NSDate] = []
 
     @IBOutlet weak var tableView: UITableView!
@@ -52,7 +54,7 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
     tableView.dataSource = self
  
         
-        
+        EventsIndicator.startAnimating()
         eventsDatabaseHandle = eventsRef?.child("Church Events").observe(.childAdded, with: { (snaphot) in
             let eventPost = snaphot.value as! [String: Any]
             let event = Event(title: eventPost["eventtitle"] as! String,
@@ -73,7 +75,7 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
             
              self.events.append(event)
 
-
+            self.EventsIndicator.stopAnimating()
                         self.tableView.reloadData()
 
 
@@ -115,6 +117,18 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
     
 
 }
+    
+    override func viewDidAppear(_ animated: Bool) {
+          if (Auth.auth().currentUser!.displayName != "Neil Leon")  {
+                                    self.addEventsButton.tintColor = UIColor.clear
+                                    self.addEventsButton.isEnabled = false
+                                    
+                                }
+                                else{
+                                    
+                                    self.addEventsButton.isEnabled = true
+                                }
+    }
     
 
 
