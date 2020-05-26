@@ -11,7 +11,8 @@ import Firebase
 import FirebaseDatabase
 
 class PrayerWallViewController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
-   
+    @IBOutlet weak var prayIndicator: UIActivityIndicatorView!
+    
 @IBOutlet weak var composeButton: UIBarButtonItem!
     
     var prayerRef: DatabaseReference?
@@ -29,8 +30,8 @@ class PrayerWallViewController: UIViewController,UITableViewDelegate,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-            
+prayIndicator.startAnimating()
+        
                prayerRef = Database.database().reference()
                
                tableView.reloadData()
@@ -60,7 +61,7 @@ class PrayerWallViewController: UIViewController,UITableViewDelegate,UITableView
                    
                self.prayerRequest.append(prayPost["prayer"] as! String)
                
-                   
+                self.prayIndicator.stopAnimating()
              self.tableView.reloadData()
                    
            })
@@ -98,7 +99,11 @@ class PrayerWallViewController: UIViewController,UITableViewDelegate,UITableView
         
         
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+    }
         
            
        }

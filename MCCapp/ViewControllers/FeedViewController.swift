@@ -12,6 +12,7 @@ import FirebaseAnalytics
 import Firebase
 
 class FeedViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+    @IBOutlet weak var feedIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var announcementsComposer: UIBarButtonItem!
     // @IBOutlet weak var timeStamp: UILabel!
@@ -27,7 +28,7 @@ class FeedViewController: UIViewController, UITableViewDelegate,UITableViewDataS
 override func viewDidLoad() {
         super.viewDidLoad()
     
-
+ feedIndicator.startAnimating()
     
 //Set the Firebase reference
     ref = Database.database().reference()
@@ -60,6 +61,8 @@ override func viewDidLoad() {
         
         self.titleLabel.append(post["title"] as! String)
         
+        self.feedIndicator.stopAnimating()
+        
         self.tableView.reloadData()
     
 })
@@ -91,6 +94,8 @@ cell.titleTextLabel.text = titleLabel[indexPath.row]
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+       
+        
         if (Auth.auth().currentUser!.displayName != "Neil Leon")  {
             self.announcementsComposer.tintColor = UIColor.clear
             self.announcementsComposer.isEnabled = false
@@ -103,6 +108,8 @@ cell.titleTextLabel.text = titleLabel[indexPath.row]
         }
         
     }
+    
+    
     
 }
 

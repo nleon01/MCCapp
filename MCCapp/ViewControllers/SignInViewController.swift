@@ -10,8 +10,10 @@ import UIKit
 import GoogleSignIn
 import Firebase
 
+
 class SignInViewController: UIViewController, GIDSignInDelegate,UITabBarControllerDelegate {
    
+    @IBOutlet weak var signIn_Indicator: UIActivityIndicatorView!
     
    
 
@@ -33,12 +35,15 @@ class SignInViewController: UIViewController, GIDSignInDelegate,UITabBarControll
           }
           guard let auth = user.authentication else { return }
           let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+        signIn_Indicator.startAnimating()
           Auth.auth().signIn(with: credentials) { (authResult, error) in
           if let error = error {
           print(error.localizedDescription)
           } else {
             print("Login Successful")
             print(authResult?.user.displayName)
+            
+            self.signIn_Indicator.stopAnimating()
             self.performSegue(withIdentifier: "welcome", sender: nil)
             
           }
@@ -48,6 +53,8 @@ class SignInViewController: UIViewController, GIDSignInDelegate,UITabBarControll
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "welcome", sender: nil)
         } else {

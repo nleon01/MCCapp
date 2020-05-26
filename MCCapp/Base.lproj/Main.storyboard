@@ -42,16 +42,26 @@
                                             <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVb-Gy-DTx"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-II-vsZ">
+                                        <rect key="frame" x="0.0" y="442" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yMj-Bg-fiX"/>
+                                        </constraints>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.47094476219999998" green="0.02689742111" blue="0.0030290456490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ugX-oN-goC" secondAttribute="bottom" constant="384" id="00W-Ff-03n"/>
+                                    <constraint firstItem="kA4-II-vsZ" firstAttribute="centerX" secondItem="79x-oS-Jgt" secondAttribute="centerX" id="2eE-iz-3jC"/>
                                     <constraint firstAttribute="trailing" secondItem="ugX-oN-goC" secondAttribute="trailing" constant="278" id="6Jp-Jl-q1s"/>
                                     <constraint firstItem="ugX-oN-goC" firstAttribute="top" secondItem="79x-oS-Jgt" secondAttribute="top" constant="384" id="90Y-nn-FXq"/>
                                     <constraint firstItem="BRB-Lq-qsF" firstAttribute="leading" secondItem="79x-oS-Jgt" secondAttribute="leading" constant="86" id="HjM-zU-qwK"/>
                                     <constraint firstItem="ugX-oN-goC" firstAttribute="leading" secondItem="79x-oS-Jgt" secondAttribute="leading" constant="86" id="UHz-2G-4tD"/>
                                     <constraint firstAttribute="trailing" secondItem="BRB-Lq-qsF" secondAttribute="trailing" constant="59" id="WoM-gQ-xJ3"/>
+                                    <constraint firstItem="kA4-II-vsZ" firstAttribute="top" secondItem="ugX-oN-goC" secondAttribute="bottom" constant="8" id="b3C-od-s1Y"/>
                                     <constraint firstItem="BRB-Lq-qsF" firstAttribute="top" secondItem="79x-oS-Jgt" secondAttribute="top" constant="384" id="qHQ-gH-JMV"/>
+                                    <constraint firstItem="kA4-II-vsZ" firstAttribute="leading" secondItem="79x-oS-Jgt" secondAttribute="leading" id="rjt-Yh-Yy5"/>
                                     <constraint firstAttribute="bottom" secondItem="BRB-Lq-qsF" secondAttribute="bottom" constant="384" id="yda-iA-Krd"/>
                                 </constraints>
                             </view>
@@ -66,6 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="signIn_Indicator" destination="kA4-II-vsZ" id="IAa-ER-L6W"/>
                         <segue destination="PEf-XO-Lmr" kind="presentation" identifier="welcome" modalPresentationStyle="fullScreen" id="2db-es-qkG"/>
                     </connections>
                 </viewController>
@@ -858,6 +869,10 @@ Phone: (617) 628-5260</string>
                                     <outlet property="delegate" destination="lNv-lF-b5B" id="fcV-rO-AIS"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="vTQ-pc-S0b">
+                                <rect key="frame" x="0.0" y="422" width="414" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.47058823529999999" green="0.027450980390000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -877,6 +892,7 @@ Phone: (617) 628-5260</string>
                     </navigationItem>
                     <connections>
                         <outlet property="composeButton" destination="tBe-o6-FC8" id="WKJ-CQ-Ybp"/>
+                        <outlet property="prayIndicator" destination="vTQ-pc-S0b" id="yme-jA-zBf"/>
                         <outlet property="tableView" destination="Ccq-gP-sz2" id="aFK-Ix-qlt"/>
                     </connections>
                 </viewController>
@@ -1077,11 +1093,11 @@ Phone: (617) 628-5260</string>
             </objects>
             <point key="canvasLocation" x="1948" y="245"/>
         </scene>
-        <!--Connect-->
+        <!--Connected-->
         <scene sceneID="bNt-u0-HN1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P3l-mj-Wgo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Connect" image="icons8-handshake-heart-48" id="T9N-YO-Wka"/>
+                    <tabBarItem key="tabBarItem" title="Connected" image="icons8-handshake-heart-48" id="T9N-YO-Wka"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4iu-F2-2cz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1194,6 +1210,10 @@ Phone: (617) 628-5260</string>
                                     <outlet property="delegate" destination="szY-pH-BVY" id="dsE-QR-0pn"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="YP7-C3-r5x">
+                                <rect key="frame" x="0.0" y="422" width="414" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.47058823529999999" green="0.027450980390000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1213,6 +1233,7 @@ Phone: (617) 628-5260</string>
                     </navigationItem>
                     <connections>
                         <outlet property="announcementsComposer" destination="NlK-Xb-NKN" id="kpK-xD-u7s"/>
+                        <outlet property="feedIndicator" destination="YP7-C3-r5x" id="4Qg-8r-ef2"/>
                         <outlet property="tableView" destination="sOa-On-BJh" id="zFa-in-ygc"/>
                     </connections>
                 </viewController>
@@ -1368,11 +1389,11 @@ Phone: (617) 628-5260</string>
             </objects>
             <point key="canvasLocation" x="5096" y="817"/>
         </scene>
-        <!--Annoucements-->
+        <!--Notifications-->
         <scene sceneID="3kB-Yb-O7v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeU-Dx-A19" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Annoucements" image="notify" id="YpA-1b-00g"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notify" id="YpA-1b-00g"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ood-VQ-mP5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1519,7 +1540,7 @@ Phone: (617) 628-5260</string>
                                     <outlet property="delegate" destination="GeI-wD-ZfK" id="TKs-jc-02b"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" id="mnn-Bw-4ao">
+                            <activityIndicatorView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="mnn-Bw-4ao">
                                 <rect key="frame" x="0.0" y="438" width="414" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>

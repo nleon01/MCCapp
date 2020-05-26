@@ -80,7 +80,7 @@ UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/842029288")!
     
     // Tuesday Bible Study
     @IBAction func MC3(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
+        UIApplication.shared.openURL(URL(string: "https://www.youtube.com/channel/UC0clY7VjxRyRsfC6YWDlY6Q")!)
        }
     
     // Teen Sunday School
@@ -92,7 +92,7 @@ UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/842029288")!
      //friday Night Prayer
    
     @IBAction func MC5(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
+        UIApplication.shared.openURL(URL(string: "https://www.youtube.com/channel/UC0clY7VjxRyRsfC6YWDlY6Q")!)
        }
     
      // Morning Prayer
@@ -115,7 +115,7 @@ UIApplication.shared.openURL(URL(string: "https://us02web.zoom.us/j/842029288")!
        }
      //Sunday Worship
     @IBAction func MC9(_ sender: Any) {
-        UIApplication.shared.openURL(URL(string: "https://www.facebook.com/fellowshipmission.church/")!)
+        UIApplication.shared.openURL(URL(string: "https://www.youtube.com/channel/UC0clY7VjxRyRsfC6YWDlY6Q")!)
        }
     
     override func viewDidAppear(_ animated: Bool) {

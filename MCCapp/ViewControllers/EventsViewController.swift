@@ -14,9 +14,12 @@ import Kingfisher
 import KMPlaceholderTextView
 
 
+
 class EventsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     @IBOutlet weak var EventsIndicator: UIActivityIndicatorView!
+    
+    
     
     var eventTimestamps:[NSDate] = []
 
@@ -33,16 +36,20 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     
+    
+    
     var events = [Event]()
     
     
     @IBOutlet weak var addEventsButton: UIBarButtonItem!
    
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-   // adminAuth()
+         EventsIndicator.startAnimating()
+  
         
     eventsRef = Database.database().reference()
 
@@ -54,7 +61,10 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
     tableView.dataSource = self
  
         
-        EventsIndicator.startAnimating()
+      
+        
+      
+        
         eventsDatabaseHandle = eventsRef?.child("Church Events").observe(.childAdded, with: { (snaphot) in
             let eventPost = snaphot.value as! [String: Any]
             let event = Event(title: eventPost["eventtitle"] as! String,
@@ -75,7 +85,13 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
             
              self.events.append(event)
 
+            
+            
             self.EventsIndicator.stopAnimating()
+            
+            
+            
+            
                         self.tableView.reloadData()
 
 
@@ -128,7 +144,14 @@ class EventsViewController: UIViewController,UITableViewDelegate,UITableViewData
                                     
                                     self.addEventsButton.isEnabled = true
                                 }
+        
+        
+       
+         
+        
     }
+    
+    
     
 
 

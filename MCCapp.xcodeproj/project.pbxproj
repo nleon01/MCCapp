@@ -174,7 +174,6 @@
 				A6706C572471C3F1005EC36A /* EventPickerViewController.swift */,
 				A634D1D2246E339800FAC052 /* Connected_ViewController.swift */,
 				A6706C5B2471C416005EC36A /* EventsViewController.swift */,
-				A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */,
 				A634D1CA246A6D2600FAC052 /* FeedViewController.swift */,
 				A634D1C6246A6CC000FAC052 /* ComposeViewController.swift */,
 				A634D1BE2468A9BA00FAC052 /* PrayerWallPostViewController.swift */,
@@ -187,6 +186,7 @@
 		A634D1B424689EDB00FAC052 /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
+				A634D1CE246E312C00FAC052 /* Stay_Connected_CollectionViewCell.swift */,
 				A634D1BA2468A0B000FAC052 /* PrayerWallTableViewCell.swift */,
 				A634D1C2246A6B7900FAC052 /* CustomTableViewCell.swift */,
 				A6706C532471C3C5005EC36A /* PickerTableViewCell.swift */,
