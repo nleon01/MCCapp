@@ -23,8 +23,8 @@ class HomeViewController: UIViewController {
      @IBAction func churchLocation(_ sender: Any)
      {
          //Defining destination
-         let latitude:CLLocationDegrees = 42.3284719
-         let longitude:CLLocationDegrees = -71.097651
+         let latitude:CLLocationDegrees = 42.3874926
+         let longitude:CLLocationDegrees = -71.1036373
          
          let regionDistance:CLLocationDistance = 1000;
          let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
         do {
             try Auth.auth().signOut()
         }catch let logoutError{
-            print("logoutError")
+    
         }
         
        let logoutStoryboard = UIStoryboard(name: "Main", bundle: nil)
